@@ -1,14 +1,16 @@
-package com.study.guaiutils;
+package com.study.guaiutils.mvp.view;
+
+import com.study.guaiutils.mvp.presenter.IPresenter;
 
 /**
  * +----------------------------------------------------------------------
  * | 项   目: GuaiCodeUtils
  * +----------------------------------------------------------------------
- * | 包   名: com.study.guaiutils
+ * | 包   名: com.study.guaiutils.mvp.view
  * +----------------------------------------------------------------------
- * | 类   名: StringUtils
+ * | 类   名: IActivity
  * +----------------------------------------------------------------------
- * | 时　　间: 2021/11/10 14:37
+ * | 时　　间: 2021/11/10 16:01
  * +----------------------------------------------------------------------
  * | 代码创建: 王益德
  * +----------------------------------------------------------------------
@@ -17,11 +19,10 @@ package com.study.guaiutils;
  * | 功能描述:
  * +----------------------------------------------------------------------
  **/
-public class StringUtils {
-    public static boolean isEmpty(String msg){
-        if (msg.trim().equals("") || msg == null){
-            return true;
-        }
-        return false;
-    }
+public interface IActivity {
+    void initView();
+    void initData();
+
+    int bindLayout();
+    <P extends IPresenter> P initPresenter();
 }

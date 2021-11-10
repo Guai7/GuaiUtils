@@ -34,4 +34,45 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //工具类
+    api 'com.blankj:utilcode:1.30.6'
+
+    //网络框架 okhttp
+    api 'com.squareup.okhttp3:okhttp:3.12.1'
+
+    //日志拦截器
+    api 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+
+    //Gson
+    api 'com.google.code.gson:gson:2.8.0'
+
+    //Glide图片框架
+    api 'com.github.bumptech.glide:glide:4.12.0'
+
+    //万能适配器
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.0'
+
+    //刷新核心必须依赖
+    api 'com.scwang.smart:refresh-layout-kernel:2.0.3'
+
+    //经典刷新头
+    api 'com.scwang.smart:refresh-header-classics:2.0.3'
+
+    //EventBus依赖	（类似广播）
+    api 'org.greenrobot:eventbus:3.0.0'
+
+    //生成二维码😀
+    api 'cn.yipianfengye.android:zxing-library:2.2'
+
+    //retrofit2 网络请求封装框架
+    api 'com.squareup.retrofit2:retrofit:2.6.2'
+    //Gson converter 网络请求对象解析器
+    api 'com.squareup.retrofit2:converter-gson:2.4.0'
+    //RxJava2 Adapter 线程异常任务调度
+    api "com.squareup.retrofit2:adapter-rxjava2:2.3.0"
+
+    //RxJava依赖
+    api 'io.reactivex.rxjava2:rxjava:2.2.6'
+    api 'io.reactivex.rxjava2:rxandroid:2.1.0'
 }
